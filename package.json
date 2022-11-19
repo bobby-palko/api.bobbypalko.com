@@ -1,0 +1,15 @@
+{
+  "name": "personal-api",
+  "version": "1.0.0",
+  "description": "API endpoints for my personal website, which is used to monitor and keep track of things in my life such as:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.palko.dev:bobby-palko/personal-api.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
