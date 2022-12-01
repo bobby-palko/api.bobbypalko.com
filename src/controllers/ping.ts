@@ -1,14 +1,20 @@
+import { Get, Route } from 'tsoa';
+
 interface PingResponse {
   message: string;
 }
 
-const makePingController = () => ({
-  getMessage: (): Promise<PingResponse> =>
-    new Promise<PingResponse>((resolve) => {
+@Route('ping')
+export default class PingController {
+  /**
+   * getMessage
+   */
+  @Get('/')
+  public static async getMessage(): Promise<PingResponse> {
+    return new Promise<PingResponse>((resolve) => {
       resolve({
         message: 'pong',
       });
-    }),
-});
-
-export default makePingController;
+    });
+  }
+}
